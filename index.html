@@ -15,7 +15,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="language" content="Portuguese">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="./styles/tailwind.min.css" />
 
     <!-- Primary Meta Tags -->
     <title>Fibraminas | Oferta Internet — Solicite Aqui</title>
@@ -70,7 +70,7 @@
             class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              <path fill="#fff" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
           </button>
         </div>
@@ -86,7 +86,7 @@
                     <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                   </svg>
                 </button>
-                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-20">
                   <li class=""><a class="rounded-t bg-white hover:bg-gray-300 py-2 px-4 block whitespace-no-wrap"
                       href="https://api.whatsapp.com/send?phone=5508009000444&text=quero%20contratar">WhatsApp</a></li>
                   <li class=""><a class="bg-white hover:bg-gray-300 py-2 px-4 block whitespace-no-wrap"
@@ -95,54 +95,48 @@
               </div>
             </li>
             <li class="mr-3">
-              <div
-                class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-                id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                  <li class="mr-3">
-                    <div class="dropdown inline-block relative">
-                      <button class="py-2 px-4 inline-flex items-center">
-                        <span class="mr-1">Suporte</span>
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                        </svg>
-                      </button>
-                      <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-                        <li class=""><a class="rounded-t bg-white hover:bg-gray-300 py-2 px-4 block whitespace-no-wrap"
-                            href="https://api.whatsapp.com/send?phone=5508009000444&text=quero%20contratar">WhatsApp</a>
-                        </li>
-                        <li class=""><a class="bg-white hover:bg-gray-300 py-2 px-4 block whitespace-no-wrap"
-                            href="tel:08009000444">Telefone</a></li>
-                      </ul>
-                    </div>
-                  </li>
-                  <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                      href="tel:08009000444">Fatura</a>
-                  </li>
-                  <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                      href="tel:08009000444">Dívidas</a>
-                  </li>
-                  <li class="mr-3">
-                    <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                      href="tel:08009000444">SAC</a>
-                  </li>
+              <div class="dropdown inline-block relative">
+                <button class="py-2 px-4 inline-flex items-center">
+                  <span class="mr-1">Suporte</span>
+                  <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                  </svg>
+                </button>
+                <ul class="dropdown-menu absolute hidden text-gray-700 pt-1 z-20">
+                  <li class=""><a class="rounded-t bg-white hover:bg-gray-300 py-2 px-4 block whitespace-no-wrap"
+                      href="https://api.whatsapp.com/send?phone=5508009000444&text=quero%20contratar">WhatsApp</a></li>
+                  <li class=""><a class="bg-white hover:bg-gray-300 py-2 px-4 block whitespace-no-wrap"
+                      href="tel:08009000444">Telefone</a></li>
                 </ul>
-                <a id="navAction" href="tel:08009000444"
-                  class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                  0800 900 0444
-                </a>
               </div>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="tel:08009000444">Fatura</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="tel:08009000444">Dívidas</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="tel:08009000444">SAC</a>
+            </li>
+          </ul>
+          <a id="navAction" href="tel:08009000444"
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out hidden lg:block">
+            0800 900 0444
+          </a>
         </div>
-        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
 
     <!--Hero-->
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+        <div class="flex flex-col w-full md:w-2/5 justify-center items-center text-center md:text-left md:items-start">
           <p class="uppercase tracking-loose w-full"></p>
           <h1 class="my-4 text-5xl font-bold leading-tight">
             Oferta Internet
@@ -160,12 +154,12 @@
         </div>
         <!--Right Col-->
         <div class="grid w-full md:w-3/5 py-6">
-          <img class="w-full md:w-2/5 md:justify-self-center" src="assets/banner.svg" />
+          <img alt="banner promocional" class="w-full md:w-2/5 md:justify-self-center" src="assets/banner.svg" />
         </div>
       </div>
     </div>
     <div class="relative -mt-12 lg:-mt-24">
-      <object data="./assets/hero-shape.svg" width="100%"> </object>
+      <object alt="Shape de estilização" data="./assets/hero-shape.svg" width="100%"> </object>
     </div>
 
     <!--Preços-->
@@ -275,12 +269,14 @@
           </div>
           <div class="w-full sm:w-1/2 p-6">
             <img class="w-full sm:h-64 mx-auto object-cover rounded-3xl"
+              alt="Internet fibra com velocidade e estabilidade"
               src="https://images.pexels.com/photos/11163176/pexels-photo-11163176.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           </div>
         </div>
         <div class="flex flex-wrap flex-col-reverse sm:flex-row">
           <div class="w-full sm:w-1/2 p-6 mt-6">
             <img class="w-full sm:h-64 mx-auto object-cover rounded-3xl"
+              alt="Internet fibra com velocidade e estabilidade"
               src="https://images.pexels.com/photos/4260749/pexels-photo-4260749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           </div>
           <div class="w-full sm:w-1/2 p-6 mt-6">
@@ -311,7 +307,8 @@
             </p>
           </div>
           <div class="w-full sm:w-1/2 p-6">
-            <img class="w-full sm:h-64 mx-auto object-cover rounded-3xl"
+            <img alt="Jogue com mais velocidade e menos latência"
+              class="w-full sm:h-64 mx-auto object-cover rounded-3xl"
               src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" />
           </div>
         </div>
@@ -333,7 +330,7 @@
           <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-              <img class="w-full md:w-4/5" src="./assets/hero.png" />
+              <img alt="Imagem do hero" class="w-full md:w-4/5" src="./assets/hero.png" />
             </div>
             <!--Right Col-->
             <div class="w-full md:w-2/5 py-6 text-left">
@@ -357,7 +354,7 @@
         </div>
       </div>
     </section>
-    <object class="wave-top" data="./assets/shape3.svg" width="100%"> </object>
+    <object alt="Shape de estilização" class="wave-top" data="./assets/shape3.svg" width="100%"> </object>
 
     <!--Call to action-->
     <section class="container mx-auto text-center py-6 mb-12">
@@ -393,7 +390,7 @@
     <!-- jQuery if you need it
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   -->
-    <script src="./js/main.js"></script>
-    <script src="./js/dropdown.js"></script>
+    <script src="./js/main.js" async></script>
+    <script src="./js/dropdown.js" async></script>
   </body>
 </html>
