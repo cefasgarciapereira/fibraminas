@@ -3,36 +3,36 @@
    License: none (public domain)
 */
 
-@import url("./typography.css");
-
-/* Simplonbp Bold*/
 @font-face {
-    font-family: "Simplonbp webfont", sans-serif;
-    src: url("../assets/fonts/simplonbp-regular-webfont.ttf");
+    font-family: 'Simplonbp webfont';
+    src: url('https://uploads-ssl.webflow.com/62b39659f94d6c0c993d01ce/62b39659f94d6c10493d01eb_simplonbp-regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 
-/* Simplonbp Medium*/
 @font-face {
-    font-family: "Simplonbp webfont", sans-serif;
-    src: url("../assets/fonts/simplonbp-medium-webfont.ttf");
+    font-family: 'Simplonbp webfont';
+    src: url('https://uploads-ssl.webflow.com/62b39659f94d6c0c993d01ce/62b39659f94d6c55c13d01ea_simplonbp-bold-webfont.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
+    font-display: swap;
 }
 
-/* Simplonbp Headline*/
 @font-face {
-    font-family: "Simplonbp webfont", sans-serif;
-    src: url("../assets/fonts/simplonoi-headline.ttf");
+    font-family: 'Simplonbp webfont';
+    src: url('https://uploads-ssl.webflow.com/62b39659f94d6c0c993d01ce/62b39659f94d6c16db3d01ed_simplonbp-medium-webfont.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }
 
-/* Simplonbp Bold*/
 @font-face {
-    font-family: "Simplonbp webfont", sans-serif;
-    src: url("../assets/fonts/simplonbp-bold-webfont.ttf");
-    font-weight: bold;
+    font-family: 'Simplonoi headline';
+    src: url('https://uploads-ssl.webflow.com/62b39659f94d6c0c993d01ce/62b39659f94d6c49263d01f5_simplonoi-headline.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
 }
 
 html,
@@ -169,6 +169,7 @@ table {
 html {
     font-size: 16px;
     font-family: "Simplonbp webfont", sans-serif;
+    color: var(--dark-gray);
 
     @media screen and (min-width: 600px) {
         font-size: calc(16px + .1vw);
@@ -214,4 +215,11 @@ h6 {
 
 p {
     font-size: 1rem;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
 }
