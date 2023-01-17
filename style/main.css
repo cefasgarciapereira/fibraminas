@@ -38,6 +38,10 @@
     text-align: center;
 }
 
+.text-size-h4 {
+    font-size: 1.5rem;
+}
+
 .mb-sm {
     margin-bottom: var(--spacing-md);
 }
@@ -355,6 +359,10 @@
     object-fit: scale-down;
 }
 
+.know-more img {
+    object-fit: cover;
+    width: 100%;
+}
 
 footer div {
     background-color: var(--gray);
