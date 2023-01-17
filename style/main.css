@@ -449,3 +449,7 @@ footer div {
         padding-right: 12rem !important;
     }
 }
+
+html {
+    visibility: visible !important;
+}
