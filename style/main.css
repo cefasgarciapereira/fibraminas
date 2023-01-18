@@ -50,6 +50,23 @@
     border-radius: var(--spacing-md);
 }
 
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    border-radius: 100%;
+    bottom: var(--spacing-md);
+    right: var(--spacing-md);
+    background-color: #00A356;
+    filter: invert(99%) sepia(2%) saturate(1160%) hue-rotate(161deg) brightness(113%) contrast(100%) drop-shadow(0px 0px 9px rgba(0, 0, 0, 0.15));
+}
+
+.whatsapp-button:hover {
+    cursor: pointer;
+}
 
 .nav {
     background-color: var(--gray);
@@ -77,6 +94,7 @@
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+    width: 50%;
 }
 
 .hero {
@@ -379,8 +397,26 @@ footer div {
     }
 }
 
+/*Mobile L*/
+@media only screen and (min-width: 425px) {
+
+    .btn-phone {
+        width: auto;
+    }
+
+    .phone-icon {
+        display: block;
+    }
+}
+
 /*Tablets*/
 @media only screen and (min-width: 768px) {
+
+    .whatsapp-button {
+        bottom: var(--spacing-lg);
+        right: var(--spacing-lg);
+    }
+
     .hero {
         flex-direction: row;
         align-items: flex-end;
@@ -404,6 +440,11 @@ footer div {
 
 /*Laptop*/
 @media only screen and (min-width: 1024px) {
+
+    .whatsapp-button {
+        bottom: var(--spacing-xl);
+        right: var(--spacing-xl);
+    }
 
     .card-prices-container {
         display: none;
