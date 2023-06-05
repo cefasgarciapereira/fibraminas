@@ -130,6 +130,7 @@
 }
 
 .btn-buy,
+.btn-support,
 .btn-buy_price-row {
     padding: var(--spacing-lg);
     background-color: var(--secondary);
